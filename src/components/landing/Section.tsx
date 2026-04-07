@@ -142,13 +142,24 @@ export default function Section({
         )}
 
         {contacts && (
-          <motion.div className="flex flex-col gap-4 mt-8" {...fadeUp(0.2)}>
-            {contacts.map((c, i) => (
-              <div key={i} className="flex items-center gap-3 text-neutral-300">
-                <Icon name={c.icon as "Phone"} size={18} className="text-[#8BC34A]" />
-                <span className="text-lg">{c.value}</span>
+          <motion.div className="flex flex-col gap-6 mt-8" {...fadeUp(0.2)}>
+            <div className="border-l-2 border-[#8BC34A]/50 pl-4">
+              <div className="text-white font-semibold text-base leading-snug">
+                Общество с ограниченной ответственностью «ЛесСтрой Карелия»
               </div>
-            ))}
+              <div className="flex gap-6 mt-2">
+                <span className="text-neutral-400 text-sm">ИНН <span className="text-neutral-300">1000020489</span></span>
+                <span className="text-neutral-400 text-sm">ОГРН <span className="text-neutral-300">1251000001361</span></span>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              {contacts.map((c, i) => (
+                <div key={i} className="flex items-center gap-3 text-neutral-300">
+                  <Icon name={c.icon as "Phone"} size={18} className="text-[#8BC34A]" />
+                  <span className="text-lg">{c.value}</span>
+                </div>
+              ))}
+            </div>
           </motion.div>
         )}
 
