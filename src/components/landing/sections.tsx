@@ -9,7 +9,7 @@ export const sections = [
     content: "Полный комплекс услуг по расчистке трасс, подготовке площадок под строительство и промышленной лесозаготовке.",
     showButton: true,
     buttonText: 'Оставить заявку',
-    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/files/ce36b6d3-2f60-4630-86b4-48c5a5595059.jpg'
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/a0f3d06a-c3c4-4d28-8b44-4681fc20cf17.jpg'
   },
   {
     id: 'about',
@@ -31,12 +31,13 @@ export const sections = [
       { icon: 'Truck', title: 'Вывозка и штабелирование', desc: 'Транспортировка леса и организованное складирование древесины' },
       { icon: 'Flame', title: 'Утилизация порубочных остатков', desc: 'Измельчение и экологичная утилизация порубочных остатков' },
     ],
-    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/files/2861f901-c997-4e99-b7de-8bb6b7b43dc9.jpg'
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/79557b66-e0f1-4fad-87eb-064f785680aa.jpg'
   },
   {
     id: 'equipment',
     title: 'Техника и оборудование.',
     content: 'Собственный парк современных машин ведущих мировых производителей обеспечивает высокую производительность и точность работ.',
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/b46e7b6a-dd7d-49bd-9d12-daf699ce784f.jpg',
     equipment: [
       { name: 'Ponsse Ergo', type: 'Харвестер', desc: 'Точная валка и обработка деревьев любых диаметров' },
       { name: 'Ponsse Buffalo', type: 'Форвардер', desc: 'Вывозка заготовленной древесины по любому рельефу' },
@@ -54,7 +55,7 @@ export const sections = [
       { name: 'Дорожный коридор М-12', area: '950 га', type: 'Дорожное строительство' },
       { name: 'Промплощадка НЛМК', area: '320 га', type: 'Промышленный объект' },
     ],
-    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/files/11293fad-1285-431e-af45-89ac7e885648.jpg'
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/dceb3a87-c829-4730-aee4-4e84002c376f.jpg'
   },
   {
     id: 'advantages',
