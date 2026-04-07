@@ -83,8 +83,8 @@ export const sections = [
     buttonText: 'Оставить заявку',
     contacts: [
       { icon: 'Phone', value: '+7 (814) 225-56-86' },
-      { icon: 'Mail', value: 'info@lesozagotovka.ru' },
-      { icon: 'MapPin', value: 'г. Москва, ул. Лесная, 10' },
+      { icon: 'Mail', value: 'lsk@leskarelia.ru' },
+      { icon: 'MapPin', value: '185034, г. Петрозаводск, проезд Механический, 8 офис 213' },
     ]
   },
 ]
