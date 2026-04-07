@@ -59,7 +59,7 @@ export default function LandingPage() {
       <div className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 py-4 bg-gradient-to-b from-black/60 to-transparent">
         <div className="flex items-center gap-2">
           <Icon name="TreePine" size={28} className="text-[#8BC34A]" />
-          <span className="text-white font-bold text-xl tracking-tight">ЛесПроф</span>
+          <span className="text-white font-bold text-xl tracking-tight">ЛесСтрой Карелия</span>
         </div>
         <div className="hidden md:flex items-center gap-6 text-neutral-300 text-sm">
           {sections.map((s, i) => (
