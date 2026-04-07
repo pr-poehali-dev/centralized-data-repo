@@ -15,6 +15,7 @@ export const sections = [
     id: 'about',
     title: 'О компании.',
     content: 'Более 5 лет мы выполняем сложные лесозаготовительные работы на линейных и промышленных объектах. Наша миссия — безопасная, экологичная и своевременная расчистка любых территорий. Мы строго соблюдаем природоохранное законодательство и стандарты промышленной безопасности.',
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/af858055-3269-44d8-aef3-30f5c8adddd1.jpg',
     stats: [
       { value: '5+', label: 'лет опыта' },
       { value: '50+', label: 'объектов сдано' },
@@ -60,6 +61,7 @@ export const sections = [
   {
     id: 'advantages',
     title: 'Почему выбирают нас.',
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/685c39f9-86d1-4250-8133-f54bfd578629.jpg',
     advantages: [
       { icon: 'Shield', title: 'Собственный парк техники', desc: 'Не зависим от подрядчиков — собственные современные машины всегда в готовности' },
       { icon: 'Users', title: 'Опытные операторы', desc: 'Сертифицированные специалисты с допусками к работе на всех типах объектов' },
@@ -70,6 +72,7 @@ export const sections = [
   {
     id: 'contacts',
     title: 'Свяжитесь с нами.',
+    bgImage: 'https://cdn.poehali.dev/projects/5bc3f399-3ee4-49bc-88c8-1abda94914be/bucket/06547135-2cd5-4dd1-a731-ca7f9711d831.jpg',
     content: 'Оставьте заявку — наш специалист свяжется с вами в течение 30 минут и рассчитает стоимость работ.',
     showButton: true,
     buttonText: 'Оставить заявку',
