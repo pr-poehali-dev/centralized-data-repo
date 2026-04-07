@@ -82,7 +82,7 @@ export const sections = [
     showButton: true,
     buttonText: 'Оставить заявку',
     contacts: [
-      { icon: 'Phone', value: '+7 (800) 000-00-00' },
+      { icon: 'Phone', value: '+7 (814) 225-56-86' },
       { icon: 'Mail', value: 'info@lesozagotovka.ru' },
       { icon: 'MapPin', value: 'г. Москва, ул. Лесная, 10' },
     ]
