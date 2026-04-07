@@ -24,7 +24,7 @@ export default function Section({
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${bgImage})` }}
         >
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
       )}
 
