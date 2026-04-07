@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Icon from "@/components/ui/icon"
 import type { SectionProps } from "@/types"
+import ApplicationForm from "./ApplicationForm"
 
 export default function Section({
   id, title, subtitle, content, isActive, showButton, buttonText,
@@ -152,13 +153,19 @@ export default function Section({
         )}
 
         {showButton && (
-          <motion.div className="mt-10" {...fadeUp(0.3)}>
-            <Button
-              size="lg"
-              className="bg-[#8BC34A] hover:bg-[#7CB342] text-white font-semibold px-8 py-6 text-base rounded-xl transition-colors"
-            >
-              {buttonText}
-            </Button>
+          <motion.div {...fadeUp(0.3)}>
+            {contacts ? (
+              <ApplicationForm />
+            ) : (
+              <div className="mt-10">
+                <Button
+                  size="lg"
+                  className="bg-[#8BC34A] hover:bg-[#7CB342] text-white font-semibold px-8 py-6 text-base rounded-xl transition-colors"
+                >
+                  {buttonText}
+                </Button>
+              </div>
+            )}
           </motion.div>
         )}
       </div>
