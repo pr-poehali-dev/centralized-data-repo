@@ -77,7 +77,8 @@ export const sections = [
     showButton: true,
     buttonText: 'Оставить заявку',
     contacts: [
-      { icon: 'Phone', value: '+7 (814) 225-56-86' },
+      { icon: 'Phone', value: '+7 (814) 226-56-86' },
+      { icon: 'Phone', value: '+7 (921) 4-666-000' },
       { icon: 'Mail', value: 'lsk@leskarelia.ru' },
       { icon: 'MapPin', value: '185034, г. Петрозаводск, проезд Механический, 8 офис 213' },
     ]
