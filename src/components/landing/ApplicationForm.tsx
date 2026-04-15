@@ -4,6 +4,7 @@ import func2url from '../../../backend/func2url.json'
 
 export default function ApplicationForm() {
   const [form, setForm] = useState({ name: '', phone: '', message: '' })
+  const [agreed, setAgreed] = useState(false)
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -69,9 +70,24 @@ export default function ApplicationForm() {
       {status === 'error' && (
         <div className="text-red-400 text-sm">Ошибка отправки. Попробуйте ещё раз.</div>
       )}
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={agreed}
+          onChange={e => setAgreed(e.target.checked)}
+          className="mt-1 w-4 h-4 accent-[#8BC34A] flex-shrink-0 cursor-pointer"
+        />
+        <span className="text-neutral-400 text-sm leading-snug">
+          Я согласен(а) на обработку персональных данных в соответствии с{' '}
+          <a href="#" className="text-[#8BC34A] underline hover:text-[#7CB342]">
+            Политикой конфиденциальности
+          </a>{' '}
+          в рамках Федерального закона №152-ФЗ «О персональных данных»
+        </span>
+      </label>
       <Button
         type="submit"
-        disabled={status === 'loading'}
+        disabled={status === 'loading' || !agreed}
         size="lg"
         className="bg-[#8BC34A] hover:bg-[#7CB342] text-white font-semibold px-8 py-6 text-base rounded-xl transition-colors disabled:opacity-60"
       >
