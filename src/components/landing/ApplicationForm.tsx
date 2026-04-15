@@ -79,7 +79,7 @@ export default function ApplicationForm() {
         />
         <span className="text-neutral-400 text-sm leading-snug">
           Я согласен(а) на обработку персональных данных в соответствии с{' '}
-          <a href="#" className="text-[#8BC34A] underline hover:text-[#7CB342]">
+          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#8BC34A] underline hover:text-[#7CB342]">
             Политикой конфиденциальности
           </a>{' '}
           в рамках Федерального закона №152-ФЗ «О персональных данных»
