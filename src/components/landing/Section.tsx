@@ -166,7 +166,15 @@ export default function Section({
         {showButton && (
           <motion.div {...fadeUp(0.3)}>
             {contacts ? (
-              <ApplicationForm />
+              <>
+                <ApplicationForm />
+                <div className="mt-6 text-neutral-600 text-xs">
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[#8BC34A] transition-colors underline">
+                    Политика конфиденциальности
+                  </a>
+                  {' '}· © 2026 ЛесСтрой Карелия. Все права защищены.
+                </div>
+              </>
             ) : (
               <div className="mt-10">
                 <Button
