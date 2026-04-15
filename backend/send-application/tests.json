@@ -11,7 +11,9 @@
       "method": "POST",
       "path": "/",
       "body": {"message": "test"},
-      "expectedStatus": 400
+      "expectedStatus": 400,
+      "expectedBody": {"error": "string"},
+      "bodyMatcher": "partial"
     }
   ]
 }
