@@ -49,10 +49,20 @@ def handler(event: dict, context) -> dict:
     url = f'https://api.telegram.org/bot{token}/sendMessage'
     req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json'})
 
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        result = json.loads(resp.read())
+    print(f"Отправка в Telegram, chat_id={chat_id}, token_prefix={token[:10] if token else 'None'}")
 
-    print(f"Заявка отправлена в Telegram: {result.get('ok')}")
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            result = json.loads(resp.read())
+        print(f"Telegram ответил: {result}")
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode('utf-8')
+        print(f"Telegram ошибка {e.code}: {error_body}")
+        return {
+            'statusCode': 500,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'error': error_body}, ensure_ascii=False)
+        }
 
     return {
         'statusCode': 200,
