@@ -7,10 +7,10 @@
       "expectedStatus": 200
     },
     {
-      "name": "Track visit",
+      "name": "Запись нового посещения",
       "method": "POST",
       "path": "/",
-      "body": {"session_id": "test-session-123", "time_on_site": 30, "referrer": ""},
+      "body": {"referrer": "https://google.com"},
       "expectedStatus": 200,
       "expectedBody": {"ok": true},
       "bodyMatcher": "partial"
